@@ -1,0 +1,25 @@
+﻿@model MeyawoPortfolio.Models.TblAbout
+@{
+    ViewBag.Title = "UpdateAbout";
+    Layout = "~/Views/AdminLayout/_Layout.cshtml";
+}
+
+<h2>Hakkımda Güncelleme</h2>
+<form method="post">
+    <input type="hidden" name="AboutID" value="@Model.AboutID" />
+    <label>Başlık</label>
+    <input type="text" class="form-control" style="border:solid" name="Header" value="@Model.Header" />
+    <br />
+    <label>Tanımlama</label>
+    <input type="text" class="form-control" style="border:solid" name="Description" value="@Model.Description" />
+    <br />
+    <label>Fotograf Ekle</label>
+    <input type="text" class="form-control" style="border:solid" name="ImageUrl" value="@Model.ImageUrl" />
+    <br />
+    <button type="submit" class="btn btn-primary">Güncelle</button>
+
+    <button  class="btn btn-outline-danger">Geri dön</button>
+
+</form>
+
+

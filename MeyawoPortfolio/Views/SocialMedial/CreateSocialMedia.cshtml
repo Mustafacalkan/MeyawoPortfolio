@@ -1,0 +1,21 @@
+﻿@model MeyawoPortfolio.Models.TblSocialMedia
+@{
+    ViewBag.Title = "CreateSocialMedia";
+    Layout = "~/Views/AdminLayout/_Layout.cshtml";
+}
+
+<h2>Sosyal Medya Ekle</h2>
+
+<form method="post">
+    <label>Başlık</label>
+    <input type="text" class="table table-bordered" name="Title" />
+    <br />
+    <label>Sosyal Medya Url</label>
+    <input type="text" class="table table-bordered" name="SocialMediaUrl" />
+    <br />
+    <label>Logo Ekle</label>
+    <textarea rows="4" class="table table-bordered" name="Icon"></textarea>
+    <br />
+    <button class="btn btn-info">Sosyal Medya Kaydet</button>
+    <a href="/SocialMedial/Index/" class="btn btn-outline-danger">Geri dön</a>
+</form>

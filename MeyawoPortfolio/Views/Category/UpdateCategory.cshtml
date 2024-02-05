@@ -1,0 +1,15 @@
+﻿@model MeyawoPortfolio.Models.TblCategory
+@{
+    ViewBag.Title = "CreateCategory";
+    Layout = "~/Views/AdminLayout/_Layout.cshtml";
+}
+
+<h2>Kategori Güncelle</h2>
+<form method="post">
+    <input type="hidden" name="CategoryID"  readonly value="@Model.CategoryID" />
+    <label>Yeni Kategori</label>
+    <input type="text" class="form-control" style="border:solid" name="CategoryName" value="@Model.CategoryName" />
+    <br />
+    <button type="submit" class="btn btn-primary">Güncelle</button>
+    <a href="/Category/Index/" class="btn btn-outline-danger">Geri dön</a>
+</form>

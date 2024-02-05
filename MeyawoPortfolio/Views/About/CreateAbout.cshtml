@@ -1,0 +1,24 @@
+﻿@model  MeyawoPortfolio.Models.TblAbout
+
+
+@{
+    ViewBag.Title = "CreateAbout";
+    Layout = "~/Views/AdminLayout/_Layout.cshtml";
+}
+
+<h2>Hakkımda Ekleme Sayfası</h2>
+<form method="post">
+    <label>Başlık</label>
+    <input type="text" class="table table-bordered" name="Header" />
+    <br />
+    <label>Tanımlama</label>
+    <input type="text" class="table table-bordered" name="Description" />
+    <br />
+    <label>Fotograf Ekle</label>
+    <input type="text" class="table table-bordered" name="ImageUrl" />
+    <br />
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+
+    <button href="/Project/Index" class="btn btn-outline-danger">Geri dön</button>
+</form>
+

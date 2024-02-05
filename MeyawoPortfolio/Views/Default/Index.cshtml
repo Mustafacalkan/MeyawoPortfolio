@@ -1,0 +1,33 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+
+@Html.Partial("/Views/Default/HeadPartial.cshtml")
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+
+    @Html.Partial("/Views/Default/NavbarPartial.cshtml")
+
+    @Html.Action("FeaturePartial")
+
+    @Html.Action("AboutPartial")
+
+    @Html.Action("ServicePartial")
+
+    @Html.Partial("/Views/Default/PortfolioPartial.cshtml")
+
+    @Html.Action("TestimonialPartial")
+
+    @Html.Partial("ContactPartial")
+    
+    @Html.Partial("/Views/Default/ContainerPartial.cshtml")
+    
+    @Html.Partial("/Views/Default/CorePartial.cshtml")
+
+</body>
+
+</html>

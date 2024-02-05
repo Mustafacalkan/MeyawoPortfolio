@@ -1,0 +1,24 @@
+﻿@model MeyawoPortfolio.Models.TblProject
+@{
+    ViewBag.Title = "Explanation";
+    Layout = "~/Views/AdminLayout/_Layout.cshtml";
+}
+
+<h2>Proje Listesi</h2>
+
+<table class="table table-bordered">
+<tr>
+    <th>#</th>
+    <th>Açıklama</th>
+    <th>Resim Link</th>
+    <th>Proje Link</th>
+</tr>
+
+<tr>
+    <td>@Model.ProjectID</td>
+    <td>@Model.Description</td>
+    <td>@Model.ImageUrl</td>
+    <td>@Model.ProjectID</td>
+</tr>
+</table>
+<a href="/Project/Index" class="btn btn-outline-danger">Geri dön</a>

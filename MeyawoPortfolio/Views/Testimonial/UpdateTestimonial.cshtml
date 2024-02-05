@@ -1,0 +1,21 @@
+﻿@model MeyawoPortfolio.Models.TblTestimonial
+@{
+    ViewBag.Title = "UpdateTestimonial";
+    Layout = "~/Views/AdminLayout/_Layout.cshtml";
+}
+
+<h2>UpdateProject</h2>
+
+<form method="post">
+    <label>Ad Soyad</label>
+    <input type="text" class="table table-bordered" name="NameSurname" />
+    <br />
+    <label>Görsel Linki</label>
+    <input type="text" class="table table-bordered" name="ImageUrl" />
+    <br />
+    <label>Açıklama</label>
+    <input type="text" class="table table-bordered" name="Description" />
+    <br />
+    <button type="submit" class="btn btn-primary">Referans Güncelle</button>
+    <a href="/Testimonial/Index/" class="btn btn-outline-danger">Geri dön</a>
+</form>
